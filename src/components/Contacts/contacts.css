@@ -1,0 +1,71 @@
+.contacts__content {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__content > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.contacts__content-id {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.contacts__content-name {
+  width: 40%;
+}
+
+.contacts__content-phone {
+  width: 40%;
+}
+
+.contacts__content-id,
+.contacts__content-name,
+.contacts__content-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+:is(.contacts__content-id, .contacts__content-name, .contacts__content-phone) > h5 {
+  margin: 4px 0 4px;
+}
+
+.button-delete {
+  background-color: unset;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* margin-left: 20px; */
+  margin: 10px 0 10px 20px;
+}
+
+.button-delete > i {
+  transition: transform .5s ease;
+}
+
+.button-delete:hover > i {
+  transform: scale(1.5);
+}
+
+@media screen and (min-width: 575px) {
+  .contacts__content-holder {
+    display: flex;
+    width: 100%;
+  }
+
+  .contacts__content-button-holder {
+    display: flex;
+  }
+
+  :is(.contacts__content-id, .contacts__content-name, .contacts__content-phone) > h5 {
+    margin: 14px 0 14px;
+  }
+}

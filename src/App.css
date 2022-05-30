@@ -1,0 +1,58 @@
+html {
+  position: relative;
+}
+
+body {
+  box-sizing: border-box;
+  background: radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(0,212,255,1) 20%, rgba(0,212,255,1) 80%, rgba(0,255,255,1) 100%);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.App {
+  margin: 0 auto;
+  background-color: aqua;
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 30px;
+  padding-bottom: 120px;
+  max-width: 900px;
+}
+
+@media screen and (min-width: 920px) {
+  .App {
+    margin: 50px auto;
+  }
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.allert {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
+
+.allert-success {
+  color: green;
+}
+
+.allert-holder {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
